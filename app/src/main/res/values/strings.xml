@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ExtraTranslation">SampleWeatherApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="un_expected_error">Unable to understand Server\'s response</string>
+    <string name="network_error">Please Connect your network and try again</string>
+    <string name="something_wrong">Something went wrong at our end</string>
+    <string name="permission_rationale">please provide permission</string>
+    <string name="permission_mandatory">These permissions are mandatory for the application. Please allow access.</string>
+    <string name="dummy_place">Dehradun</string>
+    <string name="_20">20</string>
+    <string name="textview">TextView</string>
+    <string name="retry">Retry</string>
+</resources>
