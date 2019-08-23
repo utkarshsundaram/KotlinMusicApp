@@ -11,10 +11,13 @@ import utkarshsundaram.kotlinproject.utils.Constants.CONNECT_TIME_OUT
 import utkarshsundaram.kotlinproject.utils.Constants.READ_TIME_OUT
 import java.util.concurrent.TimeUnit
 
-class WeatherApplication: Application()
+class MusicApplication : Application()
 {
     companion object {
        lateinit var mRetrofit:Retrofit;
+        @get:Synchronized
+        lateinit var instance: MusicApplication
+            private set
         fun getClient(): ApiClientInterface {
             return Companion.mRetrofit.create(ApiClientInterface::class.java!!)
         }
@@ -23,6 +26,7 @@ class WeatherApplication: Application()
     override fun onCreate() {
         super.onCreate()
         setRetrofitClient();
+        instance = this;
     }
 
     public fun setRetrofitClient() {
