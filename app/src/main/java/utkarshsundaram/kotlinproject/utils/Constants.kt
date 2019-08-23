@@ -7,13 +7,14 @@ object Constants
     const val FASTEST_REQUEST:Long=15000;
     const val READ_TIME_OUT:Long=5000
     const val CONNECT_TIME_OUT:Long=1000
-    const val BASE_URL="http://api.apixu.com/v1/"
+    const val BASE_URL = "https://api.github.com"
+    const val SPLASH_TIME_OUT: Long = 2000;
 
-    interface API_PARAMS {
+    interface INTENT_KEYS {
         companion object {
-            val WEATHER_PARAM = "q"
-            val DAYS_PARAM = "days"
-            val DAYS = "4"
+            val IMAGE_KEYS = "ImagePath"
+            val USER_NAME_KEY = "USER_NAME"
+            val IMAGE_VIEW: Int = 10;
         }
     }
 }
